@@ -1,0 +1,91 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #e0f2f7; /* Verde claro */
+    color: #2e7d32; /* Verde escuro */
+}
+
+header {
+    background-color: #4caf50; /* Verde médio */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img {
+  max-width: 50px; /* Ajuste o tamanho conforme necessário */
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+main {
+    padding: 1em;
+}
+
+#input-area {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#item-input {
+    flex-grow: 1;
+    padding: 0.5em;
+    border: 1px solid #a5d6a7; /* Verde mais claro */
+    border-radius: 4px;
+}
+
+#add-button {
+    background-color: #66bb6a; /* Verde um pouco mais escuro */
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#add-button:hover {
+    background-color: #43a047; /* Verde mais escuro ainda */
+}
+
+/* Estilos da Lista */
+#item-list {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
+    padding: 0.5em;
+    border-bottom: 1px solid #a5d6a7;
+    margin-bottom: 0.5em;
+
+}
+
+.item span {
+    flex-grow: 1; /* Item ocupa o espaço restante */
+}
+
+.item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+}
+.item button:hover{
+    transform: scale(1.1);
+}
+
+/* Media query para responsividade */
+@media (max-width: 600px) {
+    #input-area {
+        flex-direction: column; /* Empilhar input e botão em telas menores */
+    }
+
+    #item-input, #add-button {
+        margin-bottom: 0.5em; /* Espaçamento entre eles */
+        width: 100%; /* Largura total */
+        box-sizing: border-box;
+    }
+}
